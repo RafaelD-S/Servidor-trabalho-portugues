@@ -27,6 +27,5 @@ export async function users(app: FastifyInstance) {
     reply.send({
       mensagem: `Dados recebidos: ${body.nome}, ${body.ip}, ${body.dataDeNascimento}, ${body.email}, ${body.jaGolpe}, ${body.oQueAconteceu}, ${body.conheceQueAconteceu}, ${body.meioMaisComum}, ${body.tipoMaisComum}, ${body.modeloCelular}`,
     });
-    return Response.json(users);
   });
 }
